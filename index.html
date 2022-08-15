@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driven Eats</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<body>
+    <div class="top"> 
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="food">
+        <p>Primeiro, seu prato</p>
+        <div class="main-course">
+            <div class="main-course-plate" id="main-course1" onclick="selectMainPlate('#main-course1')">
+                <img src="./images/espaguete-negro-com-ragu-de-peixe-_02.jpg" alt="">
+                <h2 class = "name-item">Spaghetti All Mare</h2>
+                <div class="line-breaker"><h3>Spaghetti negro com ragu </br> de peixe do dia</h3></div>
+                <div class="price-and-check">
+                    <h4>R$ <span class="price">89,90</span></h4>
+                    <ion-icon name="checkmark-circle" class="escondido" id='main-course1icon'}></ion-icon>
+                </div>
+            </div>
+            <div class="main-course-plate" id="main-course2"onclick= "selectMainPlate('#main-course2')">
+                <img src="images/camarão-lula-e-polvo-grelhados-lula-e-canelone_2.jpg" alt="">
+                <h2 class = "name-item">O Mar e a Itália</h2>
+                <h3>Camarão e Lula grelhados, </br>com Canelone de Ricotta</br> fresca.</h3>
+                <div class="price-and-check">
+                    <h4>R$ <span class="price">102,90</span></h4>
+                    <ion-icon name="checkmark-circle" class="escondido" id='main-course2icon'}></ion-icon>
+                </div>
+            </div> 
+            <div class="main-course-plate" id="main-course3"onclick= "selectMainPlate('#main-course3')">
+                <img src="./images/polenta-com-carne-grelhada.jpg" alt="">
+                <h2 class = "name-item">Polenta Della Nona</h2>
+                <h3>Polenta cremosa com carne</br> de cordeiro marinada por </br> 12 horas</h3>
+                <div class="price-and-check">
+                    <h4>R$ <span class="price">69,90</span></h4>
+                    <ion-icon name="checkmark-circle" class="escondido" id='main-course3icon'}></ion-icon>
+                </div>
+            </div> 
+            <div class="main-course-plate" id="main-course4" onclick= "selectMainPlate('#main-course4')">
+                <img src="./images/pasta-i-fagioli.jpg" alt="">
+                <h2 class = "name-item">Pasta e Fagioli</h2>
+                <h3>A clássica Pasta e Fagioli </br>com uma interpretação </br>moderna do prato</h3>
+                <div class="price-and-check">
+                    <h4>R$ <span class="price">58,90</span></h4>
+                    <ion-icon name="checkmark-circle" class="escondido" id='main-course4icon'}></ion-icon>
+                </div>
+            </div>                  
+        </div>
+            <p>Agora, sua bebida</p>
+            <div class="drinks">
+                <div class="which-drink" id="drinks1" onclick="selectDrinks('#drinks1')">
+                    <img src="./images/limoncello.jpg" alt="">
+                    <h2 class = "name-item">Limoncello</h2>
+                    <h3>Licor artesanal feito a base</br> de Limões do Lago Di </br>Garda</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">23,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='drinks1icon'}></ion-icon>
+                    </div>
+                </div>
+                <div class="which-drink" id="drinks2" onclick="selectDrinks('#drinks2')">
+                    <img src="./images/frangelico.jpg" alt="">
+                    <h2 class = "name-item">Frangelico</h2>
+                    <h3>Delicioso licor frangelico </br> feito a base de nozes e com</br> notas de carvalho</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">18,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='drinks2icon'}></ion-icon>
+                    </div>
+                </div> 
+                <div class="which-drink" id="drinks3" onclick="selectDrinks('#drinks3')">
+                    <img src="./images/aperol.jpg" alt="">
+                    <h2 class = "name-item">Aperol</h2>
+                    <h3>Aperitivo italiano feito de</br> laranja-azeda, genciana,</br> ruibarbo e quinquina</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">17,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='drinks3icon'}></ion-icon>
+                    </div>
+                </div> 
+                <div class="which-drink" id="drinks4" onclick="selectDrinks('#drinks4')">
+                    <img src="./images/disaronno.jpg" alt="">
+                    <h2 class = "name-item">Disaronno</h2>
+                    <h3>Licor do tipo Amaretto,</br> possui em sua composição</br> 17 tipos de ervas. <h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">29,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='drinks4icon'}></ion-icon>
+                    </div>
+                </div>  
+            </div>
+            <p>Por fim, sua sobremesa</p>
+            <div class="desert">
+                <div class="which-desert" id = "desert1" onclick="selectDesert('#desert1')">
+                    <img src="./images/tiramissu-italiano.jpg" alt="">
+                    <h2 class = "name-item">Tiramissu</h2>
+                    <h3>Tiramissu feito na hora </br>com café brasileiro</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">29,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='desert1icon'}></ion-icon>
+                    </div>
+                </div>
+                <div class="which-desert" id = "desert2" onclick="selectDesert('#desert2')">
+                    <img src="./images/cannoli.jpg" alt="">
+                    <h2 class = "name-item">Canoli di Pistacchio</h2>
+                    <h3>Canoli feito com pasta e </br>farofa de Pistacchio</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">25,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='desert2icon'}></ion-icon>
+                    </div>
+                </div>
+                <div class="which-desert" id = "desert3" onclick="selectDesert('#desert3')">
+                    <img src="./images/roccobaba.jpg" alt="">
+                    <h2 class = "name-item">Roccobaba</h2>
+                    <h3>Torta feita a base de Rum </br>e com cobertura de </br>chocolate</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">32,90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='desert3icon'}></ion-icon>
+                    </div>
+                </div>
+                <div class="which-desert" id = "desert4" onclick="selectDesert('#desert4')">
+                    <img src="./images/gelatoDiMiele.jpg" alt="">
+                    <h2 class = "name-item">Gelato Di Miele</h2>
+                    <h3>Gelato feito no restaurante</br> com a melhor variedade</br> de mel</h3>
+                    <div class="price-and-check">
+                        <h4>R$ <span class="price">21.90</span></h4>
+                        <ion-icon name="checkmark-circle" class="escondido" id='desert4icon'}></ion-icon>
+                    </div>
+                </div> 
+            </div>
+            <div class="end-of-the-screen">
+                <div class="centering-the-button">
+                    <button class = "close-order" onclick="orderOnWpp()">Selecione os 3 itens</br> para fechar o pedido </button>
+                </div>
+                <div class="trigger hidden" onclick="orderOnWpp()"></div>
+            </div>
+    </div>
+
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
+
+</html>
